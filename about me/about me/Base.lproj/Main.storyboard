@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gr3-9m-EsJ">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Me-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="about_me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="califronia sunset " translatesAutoresizingMaskIntoConstraints="NO" id="ObN-Hc-Nwj">
+                                <rect key="frame" x="-170" y="-49" width="768" height="1024"/>
+                                <color key="backgroundColor" red="0.9246826172" green="0.61092095110407085" blue="0.10760241813116705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Me!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDT-2x-1FR">
+                                <rect key="frame" x="10" y="335" width="380" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="87"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ObN-Hc-Nwj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PEB-MX-mUa"/>
+                            <constraint firstItem="ObN-Hc-Nwj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="pxC-Gz-gwS"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About Me" image="square" catalog="system" selectedImage="square.fill" id="80r-yG-E8A">
+                        <color key="badgeColor" red="0.35574822189999999" green="1" blue="0.81763339450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215.94202898550725" y="-510.26785714285711"/>
+        </scene>
+        <!--My Family-->
+        <scene sceneID="q5m-JG-ilj">
+            <objects>
+                <viewController id="iiS-pp-4nr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k6D-eZ-glC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fsmily" translatesAutoresizingMaskIntoConstraints="NO" id="Xcm-MK-0VS">
+                                <rect key="frame" x="0.0" y="44" width="428" height="799"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="the family " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WMw-Kj-5d8">
+                                <rect key="frame" x="186" y="81" width="79" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DCy-Sy-ThN"/>
+                        <color key="backgroundColor" red="0.71778350515463918" green="0.091050878149942394" blue="0.64756838543914863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Xcm-MK-0VS" firstAttribute="leading" secondItem="DCy-Sy-ThN" secondAttribute="leading" id="0nE-zx-jng"/>
+                            <constraint firstItem="Xcm-MK-0VS" firstAttribute="top" secondItem="DCy-Sy-ThN" secondAttribute="top" id="BaA-8I-R2w"/>
+                            <constraint firstItem="DCy-Sy-ThN" firstAttribute="trailing" secondItem="Xcm-MK-0VS" secondAttribute="trailing" id="FcF-dZ-qWT"/>
+                            <constraint firstItem="DCy-Sy-ThN" firstAttribute="bottom" secondItem="Xcm-MK-0VS" secondAttribute="bottom" id="RaQ-sc-1cj"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="My Family" image="square" catalog="system" selectedImage="square.fill" id="QP9-KD-syg">
+                        <color key="badgeColor" red="0.35574822189999999" green="1" blue="0.81763339450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eWD-Bb-toW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439" y="178"/>
+        </scene>
+        <!--Places Lived-->
+        <scene sceneID="Blt-FG-Z2Z">
+            <objects>
+                <viewController id="hw0-LN-W8d" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gaD-Rg-2zb">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="road trip death valley " translatesAutoresizingMaskIntoConstraints="NO" id="VPe-6N-AeE">
+                                <rect key="frame" x="0.0" y="44" width="428" height="799"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="places iv lived " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lX1-Gt-i2n">
+                                <rect key="frame" x="186" y="81" width="111" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gdz-0f-lqc"/>
+                        <color key="backgroundColor" red="0.0041236660366870126" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gdz-0f-lqc" firstAttribute="trailing" secondItem="VPe-6N-AeE" secondAttribute="trailing" id="5qC-DO-ubd"/>
+                            <constraint firstItem="gdz-0f-lqc" firstAttribute="bottom" secondItem="VPe-6N-AeE" secondAttribute="bottom" id="cwm-F6-iUx"/>
+                            <constraint firstItem="VPe-6N-AeE" firstAttribute="top" secondItem="gdz-0f-lqc" secondAttribute="top" id="egV-Mn-cLz"/>
+                            <constraint firstItem="VPe-6N-AeE" firstAttribute="leading" secondItem="gdz-0f-lqc" secondAttribute="leading" id="fW7-HL-7BJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Places Lived" image="square" catalog="system" selectedImage="square.fill" id="pYv-1f-5XK">
+                        <color key="badgeColor" red="0.35574822189999999" green="1" blue="0.81763339450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H6g-Hg-Yb9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="216" y="178"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="28m-i8-0mz">
+            <objects>
+                <viewController id="HTe-t2-xqM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bAJ-FF-Zzd">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nose piercing " translatesAutoresizingMaskIntoConstraints="NO" id="XwH-nx-CNC">
+                                <rect key="frame" x="0.0" y="44" width="428" height="799"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="my hobbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXv-ye-f4g">
+                                <rect key="frame" x="186" y="75" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HIE-a9-ARz"/>
+                        <color key="backgroundColor" red="0.35574822189999999" green="1" blue="0.81763339450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="XwH-nx-CNC" firstAttribute="top" secondItem="HIE-a9-ARz" secondAttribute="top" id="fZy-zs-bdO"/>
+                            <constraint firstItem="HIE-a9-ARz" firstAttribute="trailing" secondItem="XwH-nx-CNC" secondAttribute="trailing" id="hMT-4w-ePq"/>
+                            <constraint firstItem="HIE-a9-ARz" firstAttribute="bottom" secondItem="XwH-nx-CNC" secondAttribute="bottom" id="o8w-YL-iKL"/>
+                            <constraint firstItem="XwH-nx-CNC" firstAttribute="leading" secondItem="HIE-a9-ARz" secondAttribute="leading" id="xYE-Qu-4Nq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="square" catalog="system" selectedImage="square.fill" id="SDI-uW-I3e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAQ-8o-nCv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="870" y="177"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Jeh-XC-vxn">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gr3-9m-EsJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ex9-D0-iYR">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <color key="selectedImageTintColor" systemColor="systemCyanColor"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="byR-Ph-37o"/>
+                        <segue destination="iiS-pp-4nr" kind="relationship" relationship="viewControllers" id="mHy-NW-u75"/>
+                        <segue destination="hw0-LN-W8d" kind="relationship" relationship="viewControllers" id="erG-kP-izB"/>
+                        <segue destination="HTe-t2-xqM" kind="relationship" relationship="viewControllers" id="0ZF-Cq-umm"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BHy-Pe-F2J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-439.13043478260875" y="-510.26785714285711"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="califronia sunset " width="768" height="1024"/>
+        <image name="fsmily" width="828" height="1244"/>
+        <image name="nose piercing " width="828" height="611"/>
+        <image name="road trip death valley " width="828" height="1241"/>
+        <image name="square" catalog="system" width="128" height="114"/>
+        <image name="square.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
