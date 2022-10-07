@@ -9,10 +9,18 @@
 
  Write a failable initializer that takes parameters for your start and end times, and then checks to see if they are fewer than 10 seconds apart. If they are, your initializer should fail. Otherwise, they should set the properties accordingly.
  */
-
+if let uwrappedRam = comp2?.ram {
+    print(uwrappedRam)
+}
 
 //:  Try to initialize two instances of a `Workout` object. Unwrap each of them and print its properties. One of them should not be initialized because the start and end times are too close together. The other should successfully initialize a `Workout` object.
+if let uwrappedYearManufactured = comp1?.yearManufactured {
+    print(uwrappedYearManufactured)
+}
 
+if let uwrappedYearManufactured = comp2?.yearManufactured {
+    print(uwrappedYearManufactured)
+}
 
 /*:
  _Copyright © 2021 Apple Inc._

@@ -56,10 +56,10 @@ override func viewDidLoad()
     }
     @IBAction func equalsPressed(_ sender: UIButton)
     {
-        second = userInput
+                second = userInput
                 var firstInput = 0.0
                 var secondInput = 0.0
-                firstInput = Double(first)!
+            firstInput = Double(first)!
                 secondInput = Double(second)!
                 if(function == "+")
                 {
@@ -78,7 +78,7 @@ override func viewDidLoad()
                 }
                 else if (function == "%")
                 {
-                    result = firstInput * secondInput
+                    result = firstInput / 100
                     calculatorDisplay.text = String(result)
                 }
                 else

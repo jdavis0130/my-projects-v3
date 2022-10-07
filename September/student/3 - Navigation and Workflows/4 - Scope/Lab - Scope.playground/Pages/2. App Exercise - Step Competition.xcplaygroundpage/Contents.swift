@@ -8,8 +8,22 @@
 struct User {
     var name: String
     var stepsToday: Int
+    
+    
+    init(name: String, stepsToday: Int) {
+        self.name = name
+        self.stepsToday = stepsToday
+    }
+    
+    init?(name: String?, stepsToday: Int?) {
+        if let name = name, let stepsToday = stepsToday {
+            self.name = name
+            self.stepsToday = stepsToday
+        } else {
+            return nil
+        }
+    }
 }
-
 let stepMaster = User(name: "StepMaster", stepsToday: 8394)
 let activeSitter = User(name: "ActiveSitter", stepsToday: 9132)
 let monsterWalker = User(name: "MonsterWalker", stepsToday: 7193)
@@ -24,23 +38,22 @@ func getWinner(competitors: [User]) -> User? {
     var topCompetitor: User?
 
     for competitor in competitors {
-        if let topCompetitor = topCompetitor {
-            if competitor.stepsToday > topCompetitor.stepsToday {
+            if let currentTopCompetitor = topCompetitor {
+                if competitor.stepsToday > currentTopCompetitor.stepsToday {
+                    topCompetitor = competitor
+                }
+            } else {
                 topCompetitor = competitor
             }
-        } else {
-            topCompetitor = competitor
         }
+        return topCompetitor
     }
-    return topCompetitor
-}
-
 
 //:  Write a memberwise initializer inside the `User` struct above that uses variable shadowing for naming the parameters of the initializer.
-
+var topCompetitor = getWinner(competitors: competitors)
 
 //:  Now write a failable initializer inside the `User` struct above that takes parameters `name` and `stepsToday` as an optional `String` and `Int`, respectively. The initializer should return `nil` if either of the parameters are `nil`. Use variable shadowing when unwrapping the two parameters.
-
+print(topCompetitor?.name)
 
 /*:
  _Copyright © 2021 Apple Inc._
