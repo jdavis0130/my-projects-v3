@@ -33,6 +33,7 @@
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="QgM-yM-ZmF" secondAttribute="trailing" constant="8" id="GS3-Hv-OQG"/>
                                             <constraint firstAttribute="bottom" secondItem="QgM-yM-ZmF" secondAttribute="bottom" constant="8" id="OJW-8Z-gDa"/>
+                                            <constraint firstItem="QgM-yM-ZmF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="PHU-Aj-6SC" secondAttribute="leading" constant="20" symbolic="YES" id="Txj-mc-Zq2"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROh-bD-kam">
@@ -51,6 +52,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="A/C"/>
                                                                 <connections>
                                                                     <action selector="allClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TQS-dd-GzQ"/>
+                                                                    <action selector="calculations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gOe-5e-m9g"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jsc-8j-cyb">
@@ -58,6 +60,9 @@
                                                                 <color key="backgroundColor" systemColor="systemGrayColor"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="+/-"/>
+                                                                <connections>
+                                                                    <action selector="calculations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0eX-KX-RzU"/>
+                                                                </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TcZ-V0-s0R">
                                                                 <rect key="frame" x="195.66666666666666" y="0.0" width="96.666666666666657" height="100.33333333333333"/>
@@ -65,6 +70,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="%"/>
                                                                 <connections>
+                                                                    <action selector="calculations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMH-oU-SQt"/>
                                                                     <action selector="percentPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tkh-fD-ULZ"/>
                                                                 </connections>
                                                             </button>
@@ -74,6 +80,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="/"/>
                                                                 <connections>
+                                                                    <action selector="calculations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="id7-Vu-CLK"/>
                                                                     <action selector="dividPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dhs-ia-wac"/>
                                                                 </connections>
                                                             </button>
@@ -88,6 +95,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="7"/>
                                                                 <connections>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HiV-xL-bhq"/>
                                                                     <action selector="sevenPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CWH-lp-9Bs"/>
                                                                 </connections>
                                                             </button>
@@ -98,6 +106,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="8"/>
                                                                 <connections>
                                                                     <action selector="eightPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vQW-1d-2Z1"/>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gK5-SQ-f6l"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPn-mN-Vxh">
@@ -107,6 +116,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="9"/>
                                                                 <connections>
                                                                     <action selector="ninePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Sx-wa-T4l"/>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUD-jX-26A"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zwb-LY-uIH">
@@ -115,6 +125,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="*"/>
                                                                 <connections>
+                                                                    <action selector="calculations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1NT-O1-Zvk"/>
                                                                     <action selector="multiplyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6P0-Ja-8sg"/>
                                                                 </connections>
                                                             </button>
@@ -130,6 +141,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="4"/>
                                                                 <connections>
                                                                     <action selector="fourPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yBY-65-bBL"/>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQU-KO-YJZ"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z52-UE-6Vs">
@@ -139,6 +151,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="5"/>
                                                                 <connections>
                                                                     <action selector="fivePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEF-Oh-PQQ"/>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lS5-wM-xRw"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTk-NQ-WPi">
@@ -147,6 +160,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="6"/>
                                                                 <connections>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uzg-Yt-qwU"/>
                                                                     <action selector="sixPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lpi-7f-TIX"/>
                                                                 </connections>
                                                             </button>
@@ -156,6 +170,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="-"/>
                                                                 <connections>
+                                                                    <action selector="calculations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S30-vT-mGc"/>
                                                                     <action selector="subtractPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wUI-e5-deN"/>
                                                                 </connections>
                                                             </button>
@@ -170,6 +185,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="1"/>
                                                                 <connections>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ixW-sy-zFB"/>
                                                                     <action selector="onePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F1d-sF-Nkv"/>
                                                                 </connections>
                                                             </button>
@@ -179,6 +195,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="2"/>
                                                                 <connections>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cae-PP-CEO"/>
                                                                     <action selector="twoPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mWV-4R-bUe"/>
                                                                 </connections>
                                                             </button>
@@ -188,6 +205,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="3"/>
                                                                 <connections>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UJQ-Aq-pdB"/>
                                                                     <action selector="threePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I9m-w0-zaj"/>
                                                                 </connections>
                                                             </button>
@@ -198,6 +216,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="+"/>
                                                                 <connections>
                                                                     <action selector="addPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HIu-WZ-I5W"/>
+                                                                    <action selector="calculations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RyO-EA-uJ4"/>
                                                                 </connections>
                                                             </button>
                                                         </subviews>
@@ -211,6 +230,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="0"/>
                                                                 <connections>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bFP-UF-pzR"/>
                                                                     <action selector="zeroPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UOc-1j-fgd"/>
                                                                 </connections>
                                                             </button>
@@ -221,6 +241,7 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="."/>
                                                                 <connections>
                                                                     <action selector="dotPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mky-8k-uDa"/>
+                                                                    <action selector="numberPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7lL-MT-Mfy"/>
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAF-Nb-c5n">
@@ -229,6 +250,7 @@
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="="/>
                                                                 <connections>
+                                                                    <action selector="calculations:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Uyt-X3-hXt"/>
                                                                     <action selector="equalsPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fD8-Tz-iZu"/>
                                                                 </connections>
                                                             </button>
@@ -263,6 +285,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="calculatedLabel" destination="QgM-yM-ZmF" id="dLX-VJ-yDN"/>
                         <outlet property="calculatorDisplay" destination="QgM-yM-ZmF" id="cMh-lf-5b1"/>
                     </connections>
                 </viewController>

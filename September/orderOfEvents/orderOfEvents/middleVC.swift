@@ -2,7 +2,7 @@
 //  middleVC.swift
 //  orderOfEvents
 //
-//  Created by Levi Davis on 9/29/22.
+//  Created by Levi Davis on 10/6/22.
 //
 
 import UIKit
@@ -11,53 +11,59 @@ class middleVC: UIViewController {
     
     
     @IBOutlet weak var middleVCLabel: UILabel!
-    
-    
- var eventNumber = 1
-    
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        print("viewController - view will apear")
-
-        if let actualText = middleVCLabel.text {
-            middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber) is viewDidLoad"
-            eventNumber += 1
-        }
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        print("viewController - view will apear")
         
-        if let actualText = middleVCLabel.text {
-            middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber)is viewWillAppear"
+        var eventNumber: Int = 1
+        
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+        
+            print("ViewController - View Did Load")
+
+            if let actualText = middleVCLabel.text {
+                middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber) is viewDidLoad"
+                eventNumber += 1
+            }
+        }
+        override func viewWillAppear(_ animated: Bool) {
+            super.viewWillAppear(animated)
             
+            print("ViewController - View Will Appear")
+            
+            if let actualText = middleVCLabel.text {
+                middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber)is viewWillAppear"
+                eventNumber += 1
+                
+            }
         }
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        print("viewController - view Did Appear")
+        override func viewDidAppear(_ animated: Bool) {
+            super.viewDidAppear(animated)
+            
+            print("ViewController - View Did Appear")
+            
+            if let actualText = middleVCLabel.text {
+                middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber) is viewDidAppear"
+            }
+        }
+        override func viewWillDisappear(_ animated: Bool) {
+            super.viewWillDisappear(animated)
+            
+            print("ViewController - View Will Disappear")
+            
+            if let actualText = middleVCLabel.text {
+                middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber) is viewWillDissapear"
+            }
+        }
+        override func viewDidDisappear(_ animated: Bool) {
+            super.viewDidDisappear(animated)
+            
+            print("ViewController - View Did Disappear")
+            
+            if let actualText = middleVCLabel.text {
+                middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber) is viewDidDissapear"
+            }
+        }
 
-        if let actualText = middleVCLabel.text {
-            middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber) is viewDidAppear"
-        
-        }
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        print("viewController - view did disappear")
 
-        if let actualText = middleVCLabel.text {
-            middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber) is viewWillDisappear"
-            print("viewController - view will ")
-        }
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
-        print("viewController - view did disappear")
-
-        if let actualText = middleVCLabel.text {
-            middleVCLabel.text = "\(actualText)\nEvent number \(eventNumber) is viewDidDisappear"
-        }
-    }
-}
+  
